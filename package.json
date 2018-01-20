@@ -1,5 +1,5 @@
 {
-  "name": "vue-ts-example",
+  "name": "vue-example",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -7,8 +7,15 @@
     "build": "poi build"
   },
   "devDependencies": {
+    "node-sass": "^4.7.2",
     "poi": "^9.5.4",
-    "poi-preset-typescript": "^9.0.2",
-    "typescript": "^2.6.1"
+    "sass-loader": "^6.0.6"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "iscroll": "^5.2.0",
+    "lodash": "^4.17.4",
+    "tailwindcss": "^0.4.0",
+    "vue-waterfall": "^1.0.6"
   }
 }

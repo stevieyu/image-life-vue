@@ -1,6 +1,7 @@
 module.exports = {
-  entry: 'src/index.ts',
-  presets: [
-    require('poi-preset-typescript')()
-  ]
-}
+  entry: 'src/index.js',
+  extractCSS: true,
+  webpack(config) {
+    return config;
+  },
+};
