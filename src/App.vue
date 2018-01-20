@@ -1,16 +1,14 @@
 <template>
-    <div class="font-serif mx-auto" id="app">
+    <iscroll :options="{click:true, scrollY: true}" class="font-serif mx-auto" id="app">
         <waterfall :class="next?'blur':''"/>
         <div class="start-interface flex flex-col items-center justify-end" :class="next?'show-login':''">
-            <div class="logo text-center">
+            <div class="logo w-full text-center">
                 <img src="https://picsum.photos/150" class="logo-image animated fadeInUp">
                 <div class="logo-name animated fadeInUp">Image Life</div>
             </div>
-            <div class="next-btn text-center animated fadeInUp" @click="next=!next">
-                >
-            </div>
+            <div class="next-btn text-center animated fadeInUp" @click="next=!next">></div>
         </div>
-    </div>
+    </iscroll>
 </template>
 
 <script>
@@ -31,7 +29,6 @@
         },
         filters: {},
         methods: {
-
         }
     }
 </script>
@@ -52,9 +49,10 @@
     }
 
     .start-interface {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: absolute;
+        overflow: hidden;
         top: 0;
         left: 0;
         background-image: linear-gradient(0deg, rgba(243, 243, 243, 1), rgba(243, 243, 243, 1), rgba(243, 243, 243, .2));
@@ -63,7 +61,7 @@
             margin-bottom: 11vh;
 
             &-image {
-                width: 20vw;
+                width: 20%;
                 border-radius: 25%;
                 box-shadow: 0px 5px 5px #ccc;
                 margin-bottom: 10px;
