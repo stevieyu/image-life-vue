@@ -1,6 +1,6 @@
 <template>
-  <div ref="scrollView" :style="wrapperStyle" :class="wrapperClass">
-    <div ref="scroller" :style="scrollerStyle" :class="scrollerClass">
+  <div ref="scrollView" class="iscroll-wrapper" :style="wrapperStyle" :class="wrapperClass">
+    <div ref="scroller" class="iscroll-scroller" :style="scrollerStyle" :class="scrollerClass">
       <slot></slot>
     </div>
   </div>
@@ -123,4 +123,44 @@
       })
     }
   }
+
+  // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, (() => {
+  //   let supportsPassiveOption = false;
+  //   try {
+  //     addEventListener("test", null, Object.defineProperty({}, 'passive', {
+  //       get: function () {
+  //         supportsPassiveOption = true;
+  //       }
+  //     }));
+  //   } catch(e) {}
+  //   return supportsPassiveOption;
+  // })() ? {
+  //   capture: false,
+  //   passive: false
+  // } : false);
 </script>
+
+<style lang="scss">
+  .iscroll{
+    &-wrapper{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      background: #ccc;
+      overflow: hidden;
+    }
+    
+    &-scroller{
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      min-height: 100vh;
+      transform: translateZ(0);
+      user-select: none;
+      text-size-adjust: none;
+    }
+  }
+</style>

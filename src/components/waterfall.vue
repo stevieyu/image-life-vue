@@ -56,7 +56,7 @@
         }
       },
       picsum(val) {
-        return 'https://picsum.photos/160/' + random(100, 250) + '?image=' + (val + 1) * random(1, 10);
+        return 'https://picsum.photos/160/' + random(100, 250) + '?image=' + (val + 1);
       },
       getContentTxt(url) {
         return new Promise(resolve => {
