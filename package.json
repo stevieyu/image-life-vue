@@ -7,15 +7,15 @@
     "build": "poi build"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2",
-    "poi": "^9.5.4",
-    "sass-loader": "^6.0.6"
+    "node-sass": "^4.8.2",
+    "poi": "^9.6.13",
+    "sass-loader": "^6.0.7"
   },
   "dependencies": {
-    "animate.css": "^3.5.2",
+    "animate.css": "^3.6.1",
     "iscroll": "^5.2.0",
-    "lodash": "^4.17.4",
-    "tailwindcss": "^0.4.0",
+    "lodash": "^4.17.5",
+    "tailwindcss": "^0.5.1",
     "vue-waterfall": "^1.0.6"
   }
 }
