@@ -15,6 +15,9 @@
   import waterfall from './components/waterfall'
   import Iscroll from './components/Iscroll'
 
+  // const deepstream = require('deepstream.io-client-js');
+  // const client = deepstream('localhost:6020').login();
+
   export default {
     components: {
       waterfall,
@@ -31,9 +34,33 @@
       }
     },
     mounted() {
+      // this.clientLogin();
     },
     filters: {},
-    methods: {}
+    methods: {
+      clientLogin() {
+        client.login({
+          type: 'email',
+          email: 'user@example.com',
+          password: 'sesame'
+        }, (success, data) => {
+          if (success) {
+            // data will be an object with {id: 'user-id'} plus
+            // additional data specified in clientData
+            // start application
+            // client.getConnectionState() will now return 'OPEN'
+          } else {
+            // extra data can be returned from the permissionHandler as client data
+            // both successful and unsuccesful logins
+
+            // client.getConnectionState() will now return
+            // 'AWAITING_AUTHENTICATION' or 'CLOSED'
+            // if the maximum number of authentication
+            // attempts has been exceeded.
+          }
+        })
+      }
+    }
   }
 </script>
 
