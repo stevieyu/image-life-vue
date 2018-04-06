@@ -8,7 +8,7 @@ module.exports = {
     return config;
   },
   devServer: {
-    https: true,
+    // https: true,
     proxy: {
       '/dsapi': 'http://open.iciba.com/dsapi/'
     }
