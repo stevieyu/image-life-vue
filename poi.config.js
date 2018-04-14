@@ -1,9 +1,18 @@
 module.exports = {
   entry: 'src/index.js',
-  extractCSS: false,
+  filename: {
+    js: 'js/[name].[chunkhash:8].js',
+    css: 'css/[name].[chunkhash:8].css',
+    chunk: 'chunk/[id].[chunkhash:8].js',
+  },
   webpack(config) {
     config.plugins.push(new (require('workbox-webpack-plugin').GenerateSW)({
       importWorkboxFrom: 'local',
+    }));
+    config.plugins.push(new (require('webpack-notifier')));
+    config.plugins.push(new (require('webpack-assets-manifest'))({
+      output: 'mix-manifest.json',
+      fileExtRegex: /\.(js|css)$/i
     }));
     return config;
   },
