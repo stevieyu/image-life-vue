@@ -1,10 +1,7 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
   entry: 'src/index.js',
-  filename: {
-    js: 'js/[name].[chunkhash:8].js',
-    css: 'css/[name].[chunkhash:8].css',
-    chunk: 'chunk/[id].[chunkhash:8].js',
-  },
   webpack(config) {
     config.plugins.push(new (require('workbox-webpack-plugin').GenerateSW)({
       importWorkboxFrom: 'local',

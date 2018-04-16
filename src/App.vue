@@ -3,7 +3,7 @@
     <waterfall :class="next?'blur':''"/>
     <div class="start-interface flex flex-col items-center justify-end" :class="next?'show-login':''">
       <div class="logo w-full text-center">
-        <img src="https://picsum.photos/150" class="logo-image animated fadeInUp">
+        <img src="https://picsum.photos/150" @load="loaded" class="logo-image animated fadeInUp">
         <div class="logo-name animated fadeInUp">Image Life</div>
       </div>
       <div class="next-btn text-center animated fadeInUp" @click="next=!next">></div>
@@ -38,6 +38,9 @@
     },
     filters: {},
     methods: {
+      loaded(e){
+        console.log(e);
+      },
       clientLogin() {
         client.login({
           type: 'email',
