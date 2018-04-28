@@ -8,8 +8,8 @@
     "watch": "poi watch"
   },
   "devDependencies": {
-    "node-sass": "^4.8.3",
-    "poi": "^10.0.0",
+    "node-sass": "^4.9.0",
+    "poi": "^10.1.5",
     "sass-loader": "^7.0.0",
     "webpack-assets-manifest": "^3.0.1",
     "webpack-notifier": "^1.6.0",
@@ -21,7 +21,7 @@
     "deepstream.io-client-js": "^2.3.0",
     "iscroll": "^5.2.0",
     "kute.js": "^1.6.5",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
     "popmotion": "^8.1.22",
     "tailwindcss": "^0.5.2",
