@@ -166,12 +166,12 @@ module.exports = {
   |
   */
 
-  screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
-  },
+  // screens: {
+  //   'sm': '576px',
+  //   'md': '768px',
+  //   'lg': '992px',
+  //   'xl': '1200px',
+  // },
 
 
   /*
@@ -207,26 +207,26 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
-    'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
-    ],
-    'mono': [
-      'Menlo',
-      'Monaco',
-      'Consolas',
-      'Liberation Mono',
-      'Courier New',
-      'monospace',
-    ]
+    // 'serif': [
+    //   'Constantia',
+    //   'Lucida Bright',
+    //   'Lucidabright',
+    //   'Lucida Serif',
+    //   'Lucida',
+    //   'DejaVu Serif',
+    //   'Bitstream Vera Serif',
+    //   'Liberation Serif',
+    //   'Georgia',
+    //   'serif',
+    // ],
+    // 'mono': [
+    //   'Menlo',
+    //   'Monaco',
+    //   'Consolas',
+    //   'Liberation Mono',
+    //   'Courier New',
+    //   'monospace',
+    // ]
   },
 
 

@@ -17,14 +17,12 @@
   },
   "dependencies": {
     "animate.css": "^3.6.1",
-    "deepstream.io": "^3.1.1",
-    "deepstream.io-client-js": "^2.3.0",
     "iscroll": "^5.2.0",
     "kute.js": "^1.6.5",
     "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
     "popmotion": "^8.1.22",
-    "tailwindcss": "^0.5.2",
+    "tailwindcss": "^0.5.3",
     "vue-waterfall": "^1.0.6"
   }
 }
