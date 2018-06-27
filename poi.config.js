@@ -8,7 +8,7 @@ module.exports = {
     }));
     config.plugins.push(new (require('webpack-notifier')));
     config.plugins.push(new (require('webpack-assets-manifest'))({
-      output: 'mix-manifest.json',
+      // output: 'mix-manifest.json',
       fileExtRegex: /\.(js|css)$/i
     }));
     return config;
@@ -18,5 +18,5 @@ module.exports = {
     proxy: {
       '/dsapi': 'http://open.iciba.com/dsapi/'
     }
-  }
+  },
 };

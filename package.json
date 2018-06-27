@@ -2,18 +2,20 @@
   "name": "vue-example",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "poi",
     "build": "poi build",
     "watch": "poi watch"
   },
   "devDependencies": {
+    "@babel/preset-stage-0": "^7.0.0-beta.51",
     "node-sass": "^4.9.0",
-    "poi": "^10.1.5",
-    "sass-loader": "^7.0.0",
+    "poi": "^10.2.9",
+    "sass-loader": "^7.0.3",
     "webpack-assets-manifest": "^3.0.1",
     "webpack-notifier": "^1.6.0",
-    "workbox-webpack-plugin": "^3.1.0"
+    "workbox-webpack-plugin": "^3.3.0"
   },
   "dependencies": {
     "animate.css": "^3.6.1",
@@ -21,8 +23,10 @@
     "kute.js": "^1.6.5",
     "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
-    "popmotion": "^8.1.22",
-    "tailwindcss": "^0.5.3",
+    "popmotion": "^8.2.5",
+    "qs": "^6.5.2",
+    "simple-peer": "^9.1.2",
+    "tailwindcss": "^0.6.0",
     "vue-waterfall": "^1.0.6"
   }
 }
