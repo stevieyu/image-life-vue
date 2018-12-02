@@ -1,5 +1,5 @@
 module.exports = {
   plugins: [
-    (require('tailwindcss'))('./tailwind-config.js'),
+    (require('tailwindcss'))('./node_modules/tailwindcss/defaultConfig.js'),
   ]
 };

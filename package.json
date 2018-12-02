@@ -4,13 +4,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "poi dev",
-    "build": "poi build",
-    "watch": "poi watch"
+    "dev": "poi --serve",
+    "build": "poi --prod",
+    "watch": "poi --watch"
   },
   "devDependencies": {
-    "node-sass": "^4.9.3",
-    "poi": "^11.0.0-alpha.20",
+    "node-sass": "^4.10.0",
+    "poi": "^12.0.0-beta",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.17"
   },
@@ -18,9 +18,8 @@
     "animate.css": "^3.7.0",
     "iscroll": "^5.2.0",
     "lodash-es": "^4.17.10",
-    "normalize.css": "^8.0.0",
-    "qs": "^6.5.2",
-    "tailwindcss": "^0.6.6",
+    "normalize.css": "^8.0.1",
+    "tailwindcss": "^0.7.0",
     "vue": "^2.5.17",
     "vue-waterfall": "^1.0.6"
   }
