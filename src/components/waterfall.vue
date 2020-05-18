@@ -19,7 +19,7 @@
 <script>
   import Waterfall from 'vue-waterfall/lib/waterfall.vue'
   import WaterfallSlot from 'vue-waterfall/lib/waterfall-slot.vue'
-  import random from 'lodash-es/random'
+  import random from 'lodash/random'
 
   export default {
     components: {

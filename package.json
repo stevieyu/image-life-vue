@@ -1,5 +1,5 @@
 {
-  "name": "vue-example",
+  "name": "image-life-vue",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
@@ -8,19 +8,18 @@
     "build": "poi --prod",
     "watch": "poi --watch"
   },
-  "devDependencies": {
-    "node-sass": "^4.10.0",
-    "poi": "^12.0.0-beta",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.17"
-  },
   "dependencies": {
-    "animate.css": "^3.7.0",
+    "animate.css": "^4.1.0",
     "iscroll": "^5.2.0",
-    "lodash-es": "^4.17.10",
     "normalize.css": "^8.0.1",
-    "tailwindcss": "^0.7.0",
-    "vue": "^2.5.17",
+    "tailwindcss": "^1.4.6",
+    "vue": "^2.6.11",
     "vue-waterfall": "^1.0.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "poi": "^12.8.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.11"
   }
 }

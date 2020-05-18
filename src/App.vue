@@ -40,6 +40,7 @@
 
 <style lang="scss">
   @import './app.scss';
+  @import '~animate.css/source/_vars.css';
   @import "~animate.css/source/_base.css";
   @import "~animate.css/source/fading_entrances/fadeInUp.css";
 
