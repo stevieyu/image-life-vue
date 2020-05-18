@@ -5,3 +5,8 @@
 @import "~animate.css/source/fading_entrances/fadeInUp.css";
 
 @tailwind utilities;
+
+.blur {
+transition: filter .8s;
+filter: blur(15px);
+}

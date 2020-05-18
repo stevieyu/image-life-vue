@@ -53,11 +53,6 @@
     right: 0;
   }
 
-  .blur {
-    transition: filter .8s;
-    filter: blur(15px);
-  }
-
   .start-interface {
     width: 100%;
     height: 100vh;
